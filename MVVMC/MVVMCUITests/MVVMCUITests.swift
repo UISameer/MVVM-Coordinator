@@ -1,10 +1,3 @@
-//
-//  MVVMCUITests.swift
-//  MVVMCUITests
-//
-//  Created by Sameer Personal on 12/15/23.
-//
-
 import XCTest
 
 final class MVVMCUITests: XCTestCase {

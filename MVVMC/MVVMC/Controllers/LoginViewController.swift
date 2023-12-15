@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  MVVMC
-//
-//  Created by Sameer Personal on 12/15/23.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CoordinatorBoard {
 
     override func viewDidLoad() {
         super.viewDidLoad()

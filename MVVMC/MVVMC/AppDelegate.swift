@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  MVVMC
-//
-//  Created by Sameer Personal on 12/15/23.
-//
-
 import UIKit
 
 @main

@@ -1,10 +1,3 @@
-//
-//  MVVMCTests.swift
-//  MVVMCTests
-//
-//  Created by Sameer Personal on 12/15/23.
-//
-
 import XCTest
 @testable import MVVMC
 
