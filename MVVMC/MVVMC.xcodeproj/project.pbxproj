@@ -18,6 +18,7 @@
 		DC3A8B272B2C8FBD0034DD70 /* MVVMCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A8B262B2C8FBD0034DD70 /* MVVMCUITestsLaunchTests.swift */; };
 		DC3A8B352B2C8FE20034DD70 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A8B342B2C8FE20034DD70 /* Coordinator.swift */; };
 		DC3A8B372B2C903C0034DD70 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A8B362B2C903C0034DD70 /* MainCoordinator.swift */; };
+		DC3A8B392B2C90C60034DD70 /* CoordinatorBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A8B382B2C90C60034DD70 /* CoordinatorBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DC3A8B262B2C8FBD0034DD70 /* MVVMCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC3A8B342B2C8FE20034DD70 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		DC3A8B362B2C903C0034DD70 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		DC3A8B382B2C90C60034DD70 /* CoordinatorBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				DC3A8B342B2C8FE20034DD70 /* Coordinator.swift */,
 				DC3A8B362B2C903C0034DD70 /* MainCoordinator.swift */,
+				DC3A8B382B2C90C60034DD70 /* CoordinatorBoard.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC3A8B352B2C8FE20034DD70 /* Coordinator.swift in Sources */,
+				DC3A8B392B2C90C60034DD70 /* CoordinatorBoard.swift in Sources */,
 				DC3A8B082B2C8FBA0034DD70 /* ViewController.swift in Sources */,
 				DC3A8B042B2C8FBA0034DD70 /* AppDelegate.swift in Sources */,
 				DC3A8B372B2C903C0034DD70 /* MainCoordinator.swift in Sources */,
