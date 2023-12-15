@@ -2,6 +2,8 @@ import UIKit
 
 class HomeViewController: UIViewController, CoordinatorBoard {
 
+    @IBOutlet weak var userName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
