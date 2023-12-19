@@ -22,6 +22,10 @@
 		DC3A8B3C2B2C9D4B0034DD70 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A8B3B2B2C9D4B0034DD70 /* SignupViewController.swift */; };
 		DC3A8B3E2B2C9D640034DD70 /* ResetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A8B3D2B2C9D640034DD70 /* ResetPasswordVC.swift */; };
 		DC3A8B402B2C9D790034DD70 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3A8B3F2B2C9D790034DD70 /* HomeViewController.swift */; };
+		DC5382D62B31AB0D00AF6009 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5382D52B31AB0D00AF6009 /* User.swift */; };
+		DC5382D82B31AB6700AF6009 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5382D72B31AB6700AF6009 /* LoginViewModel.swift */; };
+		DC5382DB2B31B00300AF6009 /* LoginChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5382DA2B31B00300AF6009 /* LoginChildCoordinator.swift */; };
+		DC5382DD2B31B03800AF6009 /* HomeChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5382DC2B31B03800AF6009 /* HomeChildCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		DC3A8B3B2B2C9D4B0034DD70 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DC3A8B3D2B2C9D640034DD70 /* ResetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordVC.swift; sourceTree = "<group>"; };
 		DC3A8B3F2B2C9D790034DD70 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DC5382D52B31AB0D00AF6009 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC5382D72B31AB6700AF6009 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		DC5382DA2B31B00300AF6009 /* LoginChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginChildCoordinator.swift; sourceTree = "<group>"; };
+		DC5382DC2B31B03800AF6009 /* HomeChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChildCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +154,7 @@
 		DC3A8B332B2C8FC90034DD70 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				DC5382D92B31AFEB00AF6009 /* ChildCoordinators */,
 				DC3A8B342B2C8FE20034DD70 /* Coordinator.swift */,
 				DC3A8B362B2C903C0034DD70 /* MainCoordinator.swift */,
 				DC3A8B382B2C90C60034DD70 /* CoordinatorBoard.swift */,
@@ -167,6 +176,7 @@
 		DC3A8B412B2C9D870034DD70 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DC5382D72B31AB6700AF6009 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,6 +184,7 @@
 		DC3A8B422B2C9D910034DD70 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC5382D52B31AB0D00AF6009 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +194,15 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DC5382D92B31AFEB00AF6009 /* ChildCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				DC5382DA2B31B00300AF6009 /* LoginChildCoordinator.swift */,
+				DC5382DC2B31B03800AF6009 /* HomeChildCoordinator.swift */,
+			);
+			path = ChildCoordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,13 +338,17 @@
 			files = (
 				DC3A8B352B2C8FE20034DD70 /* Coordinator.swift in Sources */,
 				DC3A8B3C2B2C9D4B0034DD70 /* SignupViewController.swift in Sources */,
+				DC5382D82B31AB6700AF6009 /* LoginViewModel.swift in Sources */,
+				DC5382D62B31AB0D00AF6009 /* User.swift in Sources */,
 				DC3A8B392B2C90C60034DD70 /* CoordinatorBoard.swift in Sources */,
 				DC3A8B082B2C8FBA0034DD70 /* LoginViewController.swift in Sources */,
+				DC5382DD2B31B03800AF6009 /* HomeChildCoordinator.swift in Sources */,
 				DC3A8B042B2C8FBA0034DD70 /* AppDelegate.swift in Sources */,
 				DC3A8B402B2C9D790034DD70 /* HomeViewController.swift in Sources */,
 				DC3A8B372B2C903C0034DD70 /* MainCoordinator.swift in Sources */,
 				DC3A8B062B2C8FBA0034DD70 /* SceneDelegate.swift in Sources */,
 				DC3A8B3E2B2C9D640034DD70 /* ResetPasswordVC.swift in Sources */,
+				DC5382DB2B31B00300AF6009 /* LoginChildCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
