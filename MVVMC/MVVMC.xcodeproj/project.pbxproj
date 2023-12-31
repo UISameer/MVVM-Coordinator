@@ -26,6 +26,8 @@
 		DC5382D82B31AB6700AF6009 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5382D72B31AB6700AF6009 /* LoginViewModel.swift */; };
 		DC5382DB2B31B00300AF6009 /* LoginChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5382DA2B31B00300AF6009 /* LoginChildCoordinator.swift */; };
 		DC5382DD2B31B03800AF6009 /* HomeChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5382DC2B31B03800AF6009 /* HomeChildCoordinator.swift */; };
+		DC83F65D2B41A7180023F811 /* ChildCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83F65C2B41A7180023F811 /* ChildCoordinatorFactory.swift */; };
+		DC83F65F2B41A8FD0023F811 /* HomeChildParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83F65E2B41A8FD0023F811 /* HomeChildParameter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		DC5382D72B31AB6700AF6009 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		DC5382DA2B31B00300AF6009 /* LoginChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginChildCoordinator.swift; sourceTree = "<group>"; };
 		DC5382DC2B31B03800AF6009 /* HomeChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChildCoordinator.swift; sourceTree = "<group>"; };
+		DC83F65C2B41A7180023F811 /* ChildCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCoordinatorFactory.swift; sourceTree = "<group>"; };
+		DC83F65E2B41A8FD0023F811 /* HomeChildParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChildParameter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				DC3A8B342B2C8FE20034DD70 /* Coordinator.swift */,
 				DC3A8B362B2C903C0034DD70 /* MainCoordinator.swift */,
 				DC3A8B382B2C90C60034DD70 /* CoordinatorBoard.swift */,
+				DC83F65C2B41A7180023F811 /* ChildCoordinatorFactory.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				DC5382D52B31AB0D00AF6009 /* User.swift */,
+				DC83F65E2B41A8FD0023F811 /* HomeChildParameter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,11 +345,13 @@
 				DC3A8B352B2C8FE20034DD70 /* Coordinator.swift in Sources */,
 				DC3A8B3C2B2C9D4B0034DD70 /* SignupViewController.swift in Sources */,
 				DC5382D82B31AB6700AF6009 /* LoginViewModel.swift in Sources */,
+				DC83F65F2B41A8FD0023F811 /* HomeChildParameter.swift in Sources */,
 				DC5382D62B31AB0D00AF6009 /* User.swift in Sources */,
 				DC3A8B392B2C90C60034DD70 /* CoordinatorBoard.swift in Sources */,
 				DC3A8B082B2C8FBA0034DD70 /* LoginViewController.swift in Sources */,
 				DC5382DD2B31B03800AF6009 /* HomeChildCoordinator.swift in Sources */,
 				DC3A8B042B2C8FBA0034DD70 /* AppDelegate.swift in Sources */,
+				DC83F65D2B41A7180023F811 /* ChildCoordinatorFactory.swift in Sources */,
 				DC3A8B402B2C9D790034DD70 /* HomeViewController.swift in Sources */,
 				DC3A8B372B2C903C0034DD70 /* MainCoordinator.swift in Sources */,
 				DC3A8B062B2C8FBA0034DD70 /* SceneDelegate.swift in Sources */,

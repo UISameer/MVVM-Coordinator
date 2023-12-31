@@ -1,17 +1,16 @@
 import Foundation
 import UIKit
 
-class LoginChildCoordinator: Coordinator {
-    
-    var childCoordinators: [Coordinator] = [Coordinator]()
-    weak var mainCoordinator: MainCoordinator?
+class LoginChildCoordinator: ChildCoordinator {
+ 
+    weak var parentCoordinator: ParentCoordinator?
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    func start() {
+    func configureChildViewController() {
         let loginVc = LoginViewController.instatiateFromStoryboard()
         loginVc.loginChildCoordinator = self
         self.navigationController.pushViewController(loginVc, animated: false)
@@ -28,9 +27,10 @@ class LoginChildCoordinator: Coordinator {
     }
     
     func navigateToHomeVC(userName: String) {
-        let homeChildCoordinator = HomeChildCoordinator(navigationController: self.navigationController)
-        mainCoordinator?.childCoordinators.append(homeChildCoordinator)
-        mainCoordinator?.removeChildCoordinator(child: self)
-        homeChildCoordinator.start()
+        let homeChildCoordinator = ChildCoordinatorFactory.create(with: parentCoordinator!.navigationController, type: .home)
+        homeChildCoordinator.passParameter(value: HomeChildParameter(userName: userName))
+        parentCoordinator?.childCoordinators.append(homeChildCoordinator)
+        parentCoordinator?.removeChildCoordinator(child: self)
+        homeChildCoordinator.configureChildViewController()
     }
 }
